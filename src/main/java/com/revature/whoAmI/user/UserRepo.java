@@ -22,7 +22,7 @@ public interface UserRepo extends CrudRepository<User, String> {
 
     //<editor-fold desc="Save">
     @Modifying
-    @Query (value = "INSERT INTO users (id, first_name, last_name, username, password) VALUES (?1, ?2, crypt(?3, gen_salt('bf')), ?4, ?5)", nativeQuery = true)
+    @Query (value = "INSERT INTO users (id, first_name, last_name, username, password) VALUES (?1, ?2, ?3, ?4, ?5)", nativeQuery = true)
     public void saveUser(String id, String firstName, String lastName, String username, String password);
     //</editor-fold desc="Save">
 

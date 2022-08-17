@@ -10,6 +10,10 @@ public class NewUserRequest {
     private String username;
     private String password;
 
+    public NewUserRequest(){
+        super();
+    }
+    
     public NewUserRequest(String firstName, String lastName, String username, String password) {
         this.firstName = firstName;
         this.lastName = lastName;

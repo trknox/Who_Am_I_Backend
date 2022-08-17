@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Who_Am_I" />
+        <module name="Who_Am_I_Backend" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Who_Am_I" options="-parameters" />
+      <module name="Who_Am_I_Backend" options="-parameters" />
     </option>
   </component>
 </project>
