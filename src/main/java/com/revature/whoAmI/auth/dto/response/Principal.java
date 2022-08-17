@@ -1,0 +1,48 @@
+package com.revature.whoAmI.auth.dto.response;
+
+import com.revature.whoAmI.user.User;
+
+public class Principal {
+    private String token;
+    private String id;
+    private String username;
+
+    public Principal() {
+        super();
+    }
+
+    public Principal(User user) {
+        this.token = null;
+        this.id = user.getId();
+        this.username = user.getUsername();
+    }
+
+    public Principal(String id, String username) {
+        this.id = id;
+        this.username = username;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+}
