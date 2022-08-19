@@ -27,7 +27,7 @@ public class UserController {
 
 
     @CrossOrigin
-    @GetMapping(value = "user-id/{id}")
+    @GetMapping(value = "/user-id/{id}")
     public @ResponseBody User getUserById(@PathVariable String id){
         return userService.getUserById(id);
     }
